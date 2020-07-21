@@ -1,0 +1,128 @@
+
+
+
+RESTful
+
+django-rest-framework
+
+ serializer
+    序列化工具
+           序列化和反序列化
+       级联模型
+        添加级联字段
+            nested 嵌套
+            级联字段的key 原来必须就是存在的
+                隐形属性 _set
+                自定义 realted_name
+
+
+
+
+
+
+    APIView
+
+        CBV
+        实现各种请求的处理
+
+    mixins
+        CRUDL(list)
+        对模型的操作
+
+      viewssets
+
+      对APIView和 Mixins 高度封装
+      可以对接 router
+
+      router
+      DeafultRouter
+      可以直接批量注册路由
+
+  authention
+
+     APIView中会自动认证
+     自己创建认证类，实现认证方法
+        认证成功返回元组，用户和令牌
+
+   permisssion
+    添加权限控制
+    用户所有拥有的权限
+
+
+Celery
+    消息队列
+
+    异步任务
+
+    定时任务
+需要了解的知识
+    选择并安装消息容器（载体）
+    安装celery  并 创建 一个任务
+    并开启工作进程并调用任务
+    记录工作状态和返回的结果
+
+1 安装celery
+pip install celery
+
+2.安装celery所需的redis的 依赖
+pip install -U "celery[redis]"
+
+3. 创建任务并调用
+
+Log
+    info
+    debug
+    warning
+    error
+    critial
+4、 调用任务
+
+
+
+端
+    用户端
+    公司自己的后台
+    商家端
+
+
+后台管理
+    快速实现自己的后台
+    内置了一个admin
+    也有第三方的admin
+        比如 xadmin(好久没更新啦)
+
+    也可以去 github 查找 python
+    xadmin
+    suit
+    woop
+
+
+
+Django 内置模型
+    用户
+    组
+
+restful  小结
+        前后端分离    解决序列化问题
+
+        后端 以json  返回给前端
+
+        视图函数  CBV   FBV
+
+        认证 权限  节流   核心差不多 就这么多
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
